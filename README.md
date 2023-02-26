@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repo URL](https://github.com/pipelin10/results-summary-component.io)
+- Live Site URL: [Github URL](https://pipelin10.github.io/results-summary-component/)
 
 ## My process
 
