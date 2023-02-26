@@ -4,45 +4,75 @@
 }
 
 body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+    width: 100vw;
+    height: 95vh;
+    margin: 0;
 }
 
-#container {
-    display: flex;
-    background-color: black;
+@media screen and (max-width: 375px) {
+    #container{
+        width: 100vw;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card-result {
+        height: 47.5vh;
+        width: 100vw;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #card-detail {
+        height: 47.5vh;
+        width: 100vw;
+        border-radius: 25px;
+        background-color: hsl(221, 100%, 96%);
+        margin-right: auto;
+    }
 }
 
-#card-result {
-    height: 400px;
-    width: 400px;
-    border-radius: 25px;
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-#card-detail {
-    height: 400px;
-    width: 400px;
-    border-radius: 25px;
-    background-color: white;
-    text-align: center;
-    margin-right: auto;
+@media screen and (min-width:376px) {
+    #container {
+        width: 100vw;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #card-result {
+        height: 400px;
+        width: 300px;
+        border-radius: 25px;
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #card-detail {
+        height: 400px;
+        width: 300px;
+        border-radius: 25px;
+        background-color: hsl(221, 100%, 96%);
+        margin-right: auto;
+    }
 }
 
 .circle {
-    height: 150px;
-    width: 150px;
+    height: 100%;
+    width: 50%;
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     display: flex;
@@ -50,26 +80,122 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circle > p{
     margin: 0px;
     font-size: 18px;
-    font-family: 'HankenGrotesk';
+    color: hsl(221, 100%, 96%);
 }
 
 .circle > .points {
     font-size: 48px;
-    font-weight: bold;
-    color: white;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
 }
 
 #card-result > .tittle{
-    margin-top: 30px;
+    font-size: 18px;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    color: hsl(221, 100%, 96%);
 }
 
-#card-result > p{
-    margin-bottom: auto;
+#card-result > .summary {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0;
+    border: 0;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    color: hsl(0, 0%, 100%);
+}
+
+#card-result > .text{
+    width: 200px;
+    font-size: 15px;
+    color: hsl(241, 100%, 89%); 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+#card-detail > .tittle {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    color: hsl(224, 30%, 27%);
+    font-size: x-large;
+}
+
+#card-detail > section{
+    display: flex;
+    background-color: hsl(221, 100%, 96%);
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 85%; 
+    height: 10%;
+}
+
+#card-detail > #reaction {
+    margin-top: 30px;
+    color: hsl(0, 100%, 67%);
+}
+
+#card-detail > #memory {
+    color: hsl(39, 100%, 56%);
+}
+
+#card-detail > #verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+#card-detail > #visual {
+    color: hsl(234, 85%, 45%);
+}
+
+section > img {
+    height: 25px;
+    text-align: center;
+}
+
+section > p {
+    margin: 0;
+}
+
+section > section > p:nth-child(2) {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+section > section > p:nth-child(3) {
+    margin-left: auto;
+    color: hsl(224, 30%, 27%);
+}
+
+#card-detail > .continue {
+    width: 85%;
+    height: 50px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+#card-detail > .continue:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+    text-align: center;
+    justify-content: center;
+    align-items: end;
 }
 
 * {

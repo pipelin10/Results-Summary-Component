@@ -14,17 +14,6 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Results summary component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <section id="container">
@@ -34,27 +23,43 @@
           <p class="points">76</p>
           <p>of 100</p>
         </div>
-        <h1>Great</h1>
-        <p>
+        <h1 class="summary">Great</h1>
+        <p class="text">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </section>
       <section id="card-detail">
-        <h1>Summary</h1>
+        <h1 class="tittle">Summary</h1>
 
-        <section id="reaction">Reaction 80 / 100</section>
-        <section id="memory">Memory 92 / 100</section>
-        <section id="verbal">Verbal 61 / 100</section>
-        <section id="visual">Visual 72 / 100</section>
-        <button>Continue</button>
+        <section id="reaction">
+          <img src="./assets/images/icon-reaction.svg" alt="Reaction-Image" />
+          <p>Reaction</p>
+          <p><b>80</b> / 100</p>
+        </section>
+        <section id="memory">
+          <img src="./assets/images/icon-memory.svg" alt="Reaction-Image" />
+          <p>Memory</p>
+          <p><b>92</b> / 100</p>
+        </section>
+        <section id="verbal">
+          <img src="./assets/images/icon-verbal.svg" alt="Reaction-Image" />
+          <p>Verbal</p>
+          <p><b>61</b> / 100</p>
+        </section>
+        <section id="visual">
+          <img src="./assets/images/icon-visual.svg" alt="Reaction-Image" />
+          <p>Visual</p>
+          <p><b>72</b> / 100</p>
+        </section>
+        <button class="continue">Continue</button>
       </section>
     </section>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Carlos Felipe Montoya</a>.
-    </div>
+    </footer>
   </body>
 </html>
